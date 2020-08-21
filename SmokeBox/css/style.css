@@ -109,6 +109,30 @@ body {
   background-color: #f8ad14;
 }
 
+.button-fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  border-width: 3px;
+  background-color: rgba(248, 173, 20, 0.15);
+  color: #f8ad14;
+  padding: 0;
+}
+
+.button-fixed:hover {
+  border-color: #f8ad14;
+  background-color: rgba(248, 173, 20, 0.15);
+  color: #f8ad14;
+  -webkit-transform: translate(0, 8px);
+      -ms-transform: translate(0, 8px);
+          transform: translate(0, 8px);
+}
+
 .title {
   font-size: 38px;
   line-height: 1;
@@ -330,6 +354,10 @@ body {
 
 .social__link svg {
   width: 22px;
+}
+
+.main-content {
+  position: relative;
 }
 
 .top-first {
@@ -701,9 +729,18 @@ body {
           align-items: flex-start;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__phone {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-right: 15px;
 }
 
 .footer__phone .phone__link {
@@ -917,7 +954,7 @@ body {
   }
 
   .footer__phone {
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .footer__social .social__item {

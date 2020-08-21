@@ -96,6 +96,28 @@ body {
     }
 }
 
+.button-fixed {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    border-width: 3px;
+    background-color: rgba($accent-color, 0.15);
+    color: $accent-color;
+    padding: 0;
+
+    &:hover {
+        border-color: $accent-color;
+        background-color: rgba($accent-color, 0.15);
+        color: $accent-color;
+        transform: translate(0, 8px);
+    }
+}
+
 .title {
     font-size: 38px;
     line-height: 1;
