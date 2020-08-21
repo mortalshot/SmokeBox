@@ -98,23 +98,44 @@ body {
 
 .button-fixed {
     position: fixed;
-    right: 50px;
+    right: 30px;
     bottom: 50px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    font-size: 16px;
-    font-weight: 700;
-    border-width: 3px;
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
     background-color: rgba($accent-color, 0.15);
     color: $accent-color;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        width: 60px;
+    }
+
+    @media screen and (max-width: 575px) {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
 
     &:hover {
         border-color: $accent-color;
         background-color: rgba($accent-color, 0.15);
         color: $accent-color;
         transform: translate(0, 8px);
+    }
+
+    svg {
+        fill: $accent-color;
+
+        @media screen and (max-width: 575px) {
+            width: 25px;
+            height: 25px;
+        }
     }
 }
 
