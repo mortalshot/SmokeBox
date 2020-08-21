@@ -1,1 +1,1 @@
-@@include('menu.js')
+@@include('aos.js')

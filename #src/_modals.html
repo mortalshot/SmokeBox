@@ -1,0 +1,55 @@
+<div id="order" class="popup">
+    <div class="popup__body">
+        <div class="popup__content request-content">
+            <a href="" class="popup__close close-popup">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12 12" stroke="white" />
+                    <path d="M12 1L1 12" stroke="white" />
+                </svg>
+            </a>
+
+            <h1 class="request-content__title title">Заполните заявку</h1>
+
+            <form class="request-content__form" action="mail.php">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Gurza">
+                <input type="hidden" name="admin_email" value="seregagl1996@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с сайта Gurza">
+                <input type="hidden" name="whatever" value="whatever" id="whatever">
+                <!-- END Hidden Required Fields -->
+
+                <div class="mail__row">
+                    <div class="input-wrapper">
+                        <input type="text" name="name" id="request-content__name" class="input-wrapper__text"
+                            placeholder="Имя" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" name="phone" id="request-content__phone"
+                            class="input-wrapper__text mask-phone" placeholder="Телефон" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="email" name="email" id="request-content__email" class="input-wrapper__text"
+                            placeholder="Почта" required>
+                    </div>
+                </div>
+
+                <div class="mail__row">
+                    <div class="input-wrapper input-wrapper--textarea">
+                        <textarea name="text" placeholder="Комментарий"
+                            class="input-wrapper__text input-wrapper__textarea"></textarea>
+                    </div>
+
+                    <div class="input-wrapper input-wrapper--button">
+                        <button class="mail__button button button-bg" type="submit">Отправить</button>
+                    </div>
+                </div>
+
+                <div class="mail__policy">Я принимаю условия <a class="accent popup-link"
+                        href="#policy">пользовательского соглашения</a> и согласен на обработку персональных данных
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
